@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- (c) ammap.com | SVG weather icons -->
+
+<!-- Isolated Thunderstorms | Contributed by hsoJ95 on GitHub: https://github.com/hsoj95 -->
+
+<svg
+   width="56"
+   height="48"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="isolated-thunderstorms-night.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="11.392857"
+     inkscape:cx="28"
+     inkscape:cy="23.962382"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <defs
+     id="defs2">
+    <filter
+       id="blur"
+       x="-0.19470794"
+       y="-0.17857143"
+       width="1.3744383"
+       height="1.4660155">
+      <feGaussianBlur
+         in="SourceAlpha"
+         stdDeviation="3"
+         id="feGaussianBlur1" />
+      <feOffset
+         dx="0"
+         dy="4"
+         result="offsetblur"
+         id="feOffset1" />
+      <feComponentTransfer
+         id="feComponentTransfer1">
+        <feFuncA
+           slope="0.05"
+           type="linear"
+           id="feFuncA1" />
+      </feComponentTransfer>
+      <feMerge
+         id="feMerge2">
+        <feMergeNode
+           id="feMergeNode1" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode2" />
+      </feMerge>
+    </filter>
+  </defs>
+  <g
+     transform="translate(11.467807,-0.2194483)"
+     filter="url(#blur)"
+     id="g8">
+    <g
+       transform="matrix(0.8,0,0,0.8,16,4)"
+       id="g5">
+      <g
+         class="am-weather-moon-star-1"
+         id="g2">
+        <polygon
+           points="4,2.7 5.2,3.3 4,4 3.3,5.2 2.7,4 1.5,3.3 2.7,2.7 3.3,1.5 "
+           fill="#ffa500"
+           stroke-miterlimit="10"
+           id="polygon2" />
+      </g>
+      <g
+         class="am-weather-moon-star-2"
+         id="g3">
+        <polygon
+           transform="translate(20,10)"
+           points="4,2.7 5.2,3.3 4,4 3.3,5.2 2.7,4 1.5,3.3 2.7,2.7 3.3,1.5 "
+           fill="#ffa500"
+           stroke-miterlimit="10"
+           id="polygon3" />
+      </g>
+      <g
+         class="am-weather-moon"
+         id="g4">
+        <path
+           d="m 14.5,13.2 c 0,-3.7 2,-6.9 5,-8.7 -1.5,-0.9 -3.2,-1.3 -5,-1.3 -5.5,0 -10,4.5 -10,10 0,5.5 4.5,10 10,10 1.8,0 3.5,-0.5 5,-1.3 -3,-1.7 -5,-5 -5,-8.7 z"
+           fill="#ffa500"
+           stroke="#ffa500"
+           stroke-linejoin="round"
+           stroke-width="2"
+           id="path3" />
+      </g>
+    </g>
+    <g
+       class="am-weather-cloud-2"
+       id="g6">
+      <path
+         transform="translate(-20,-11)"
+         d="m 47.7,35.4 c 0,-4.6 -3.7,-8.2 -8.2,-8.2 -1,0 -1.9,0.2 -2.8,0.5 -0.3,-3.4 -3.1,-6.2 -6.6,-6.2 -3.7,0 -6.7,3 -6.7,6.7 0,0.8 0.2,1.6 0.4,2.3 -0.3,-0.1 -0.7,-0.1 -1,-0.1 -3.7,0 -6.7,3 -6.7,6.7 0,3.6 2.9,6.6 6.5,6.7 h 17.2 c 4.4,-0.5 7.9,-4 7.9,-8.4 z"
+         fill="#91c0f8"
+         stroke="#ffffff"
+         stroke-linejoin="round"
+         stroke-width="1.2"
+         id="path5" />
+    </g>
+    <g
+       class="am-weather-lightning"
+       transform="matrix(1.2,0,0,1.2,-4,28)"
+       id="g7">
+      <polygon
+         class="am-weather-stroke"
+         points="16.4,4.3 20.3,4.3 11.5,14.6 14.9,6.9 11.1,6.9 14.3,-2.9 20.5,-2.9 "
+         fill="#ffa500"
+         stroke="#ffffff"
+         id="polygon6" />
+    </g>
+  </g>
+</svg>

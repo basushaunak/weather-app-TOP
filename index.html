@@ -9,21 +9,33 @@
   </head>
   <body>
     <header>
-      <h1 class="page-title">Weather App for The Odin Project</h1>
+      <div class="container">
+        <h1 class="page-title">Weather App for The Odin Project</h1>
+      </div>
     </header>
     <main>
-      <div class="container">
+      <div class="container app-window">
         <div class="weather-card">
           <h2 class="city-name">City Name</h2>
           <div class="weather-icon-div">
-          <img src="#" class="weather-icon"/>
+            <img
+              src="./assets/images/icons/rainy-day.svg"
+              class="weather-icon"
+            />
           </div>
           <p class="weather-condition">Weather Condition</p>
           <p class="temperature">Temperature</p>
-          <p class="expand-button"> >> </p>
+          <p class="expand-button" title="forecast">>></p>
         </div>
+        <form action="POST" class="city-selection">
+          <label for="city-name">Enter City: </label>
+          <input type="text" id="city-name" title="Enter City Name, State & Country are optional">
+          <button id="button-get-weather">Get Weather</button>
+        </form>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <p class="footer-text">powered by <a href="https://openweathermap.org/">openweathermaps.org</a><br>Designed by <a href="https://www.github.com/basushaunak">Shaunak Basu</a></p>
+    </footer>
   </body>
 </html>
