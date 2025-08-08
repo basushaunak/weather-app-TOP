@@ -29,7 +29,7 @@ body {
   padding: 0.25em;
 }
 .weather-card {
-  height: 400px;
+  /* height: 400px; */
   width: 300px;
   margin-inline: auto;
   border: 2px red solid;
@@ -85,19 +85,46 @@ body {
   text-align: center;
 }
 
-.expand-button{
-    width:fit-content;
-    font-size: 2rem;
-    margin-inline-end: 1em;
-    margin-inline-start: auto;
-    cursor: pointer;
+.expand-button {
+  width: fit-content;
+  font-size: 2rem;
+  margin-inline-end: 1em;
+  margin-inline-start: auto;
+  cursor: pointer;
 }
-.footer-text{
-    position: absolute;
-    display: block;
-    width: fit-content;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
+.footer-text {
+  position: absolute;
+  display: block;
+  width: fit-content;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.city-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  width: fit-content;
+  font-size: 1.25rem;
+  background-color: gray;
+}
+.city-selection > * {
+  margin-inline: 1em;
+  margin-block: 0.25em;
+}
+
+.buttons {
+  padding: 0.5em 1em;
+  font-weight: bold;
+  font-size: large;
+  margin-block-end: 0.5rem;
+  cursor: pointer;
+}
+
+.input-box {
+  font-size: 1.25rem;
 }

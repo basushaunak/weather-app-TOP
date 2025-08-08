@@ -24,18 +24,31 @@
             />
           </div>
           <p class="weather-condition">Weather Condition</p>
-          <p class="temperature">Temperature</p>
+          <p class="temperature">43°C</p>
+          <p class="wind-speed">Wind Speed:99kmph</p>
+          <p class="visibility">Visibility: 2000m</p>
           <p class="expand-button" title="forecast">>></p>
         </div>
-        <form action="POST" class="city-selection">
-          <label for="city-name">Enter City: </label>
-          <input type="text" id="city-name" title="Enter City Name, State & Country are optional">
-          <button id="button-get-weather">Get Weather</button>
-        </form>
+        <dialog id="get-city-dialog">
+          <form action="POST" class="city-selection">
+            <label for="city-name">Enter City: </label>
+            <input
+              type="text"
+              class="input-box"
+              id="city-name"
+              title="Enter City Name, State & Country are optional"
+            />
+            <button class="buttons" id="button-get-weather">Get Weather</button>
+          </form>
+        </dialog>
       </div>
     </main>
     <footer>
-      <p class="footer-text">powered by <a href="https://openweathermap.org/">openweathermaps.org</a><br>Designed by <a href="https://www.github.com/basushaunak">Shaunak Basu</a></p>
+      <p class="footer-text">
+        powered by <a href="https://openweathermap.org/">openweathermaps.org</a
+        ><br />Designed by
+        <a href="https://www.github.com/basushaunak">Shaunak Basu</a>
+      </p>
     </footer>
   </body>
 </html>
