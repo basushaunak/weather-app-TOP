@@ -30,6 +30,8 @@ function runWeatherApp(card) {
     let y = event.pageY;
     getCityDialog.style.left = x + "px";
     getCityDialog.style.top = y + "px";
+    forecastCard.classList.add("hidden");
+    expandWeather.innerText = ">>";
     getCityDialog.showModal();
   });
   getCityDialog.addEventListener("click", (event) => {
@@ -92,18 +94,19 @@ function runWeatherApp(card) {
     fiveDayForecast = getFiveDayForecast(forecast);
     console.log(fiveDayForecast);
     let html = `<h2 class="card-title">5 Day Forecast</h2>`;
-    fiveDayForecast.forEach((day,idx)=>{
+    fiveDayForecast.forEach((day, idx) => {
       html += `<p class="forecast-date">${day.date}</p>`;
       html += `<div class="forecast-weather-details">`;
-      html += `<div class="forecast-icon-div">`;
+      //      html += `<div class="forecast-icon-div">`;
       html += `<img class="forecast-icon" src=${day.iconUrl}>`;
+      //      html += `</div>`;
+      html += `<p>${(day.min - 273.15).toFixed(2)}°C</p>`;
+      html += `<p>${(day.max - 273.15).toFixed(2)}°C</p>`;
       html += `</div>`;
-      html += `<p>${(day.min-273.15).toFixed(2)}°C</p>`;
-      html += `<p>${(day.max-273.15).toFixed(2)}°C</p>`;
-      html += `</div>`;
-    })
+    });
     forecastCard.innerHTML = html;
-    html=null;
+    console.log(html);
+    html = null;
   }
 
   function showProgress() {

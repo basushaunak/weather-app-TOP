@@ -17,14 +17,14 @@ body {
   position: relative;
 }
 .container {
-  border: 2px yellow solid;
+  /* border: 2px yellow solid; */
   width: 70vw;
   margin-inline: auto;
 }
 .page-title {
   text-align: center;
   margin-block: 1em;
-  border: 2px red dashed;
+  /* border: 2px red dashed; */
   width: fit-content;
   margin-inline: auto;
   padding: 0.25em;
@@ -34,7 +34,7 @@ body {
   /* height: 400px; */
   width: 300px;
   /* margin-inline: auto; */
-  border: 2px red solid;
+  /* border: 2px red solid; */
   background: linear-gradient(to right, lightgray 0%, lightgray 45%, #555 100%);
   color: black;
   text-align: center;
@@ -192,10 +192,15 @@ body {
 }
 
 .forecast-icon-div{
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
+  /* border: 1px orange solid; */
 }
 .forecast-icon{
   object-fit: cover;
   object-position: center;
+  width: 50px;
+  height: 50px;
+  /* align-self: end; */
+  justify-self: end;
 }
