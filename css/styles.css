@@ -14,6 +14,7 @@ body {
   /* background-image: url("../assets/images/backgrounds/snow.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 .container {
   border: 2px yellow solid;
@@ -27,16 +28,25 @@ body {
   width: fit-content;
   margin-inline: auto;
   padding: 0.25em;
+  user-select: none;
 }
-.weather-card {
+.card {
   /* height: 400px; */
   width: 300px;
-  margin-inline: auto;
+  /* margin-inline: auto; */
   border: 2px red solid;
-  background-color: aliceblue;
+  background: linear-gradient(to right, lightgray 0%, lightgray 45%, #555 100%);
   color: black;
   text-align: center;
   margin-block: 3rem;
+  user-select: none;
+}
+
+.forecast-card {
+  /* position: absolute; */
+  width: 300px;
+  background: linear-gradient(to left, lightgray 0%, lightgray 45%, #555 100%);
+  height: 400px;
 }
 
 .weather-icon-div {
@@ -52,35 +62,41 @@ body {
   object-position: center;
 }
 
+.hidden{
+  display: none;
+}
+.cards{
+  display: flex;
+  width: fit-content;
+  margin-inline: auto;
+}
 .app-window {
-  position: relative; /* Essential for positioning the pseudo-element */
-  color: white; /* Example text color */
+  position: relative;
+  color: white;
   padding: 20px;
-  /* You can set a background color as a fallback */
-  /* background-color: #333;  */
+  border: 2px black solid;
+  /* background-color: #333; */
 }
 
 .app-window::before {
-  content: ""; /* Pseudo-elements must have a 'content' property */
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 
-  /* Set the background image */
-  background-image: url("../assets/images/backgrounds/rain.jpg");
+  background: linear-gradient(to right, lightgray 0%, lightgray 45%, #555 100%);
+  /* background-image: url("../assets/images/backgrounds/rain.jpg"); */
   background-size: cover;
   background-position: center;
 
-  /* This is where you set the transparency */
   opacity: 0.5;
 
-  /* Place the pseudo-element behind the content */
   z-index: -1;
 }
 
-.city-name {
+.card-title {
   padding-block: 0.5em;
   text-align: center;
 }
@@ -93,15 +109,18 @@ body {
   cursor: pointer;
 }
 .footer-text {
-  position: absolute;
+  /* position: absolute; */
   display: block;
-  width: fit-content;
-  bottom: 2rem;
+  /* width: fit-content; */
+  /* bottom: 2rem;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
   text-align: center;
 }
 
+.get-city-dialog {
+  position: absolute;
+}
 .city-selection {
   display: flex;
   flex-direction: column;
@@ -127,4 +146,56 @@ body {
 
 .input-box {
   font-size: 1.25rem;
+}
+
+.temperature {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.weather-condition {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.progress-dialog {
+  position: fixed; /* keep it in the same place */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: white;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 200px;
+  height: 20px;
+}
+
+
+.forecast-date{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.forecast-weather-details{
+  width: 80%;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.forecast-icon-div{
+  width: 20px;
+  height: 20px;
+}
+.forecast-icon{
+  object-fit: cover;
+  object-position: center;
 }
