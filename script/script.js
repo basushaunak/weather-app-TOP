@@ -72,15 +72,17 @@ function runWeatherApp(card) {
     dataFetched = true;
     if (data.cod === 200) {
       weatherData = data;
+      weatherCard.classList.remove("hidden");
+      showWeatherdata(weatherData);
     } else {
       console.log(`Error: ${data.cod}, Message: ${data.message}`);
     }
-    showWeatherdata(weatherData);
   }
 
   function showWeatherdata(weatherData) {
     displayCityName.innerText = weatherData.name;
     weatherCondition.innerText = weatherData.weather[0].main;
+    appWindow.style.backgroundImage = `url("../assets/images/backgrounds/${weatherData.weather[0].main}.jpg")`;
     temperature.innerText = `${(weatherData.main.temp - 273.15).toFixed(2)}°C`;
     windSpeed.innerText = `Wind speed: ${weatherData.wind.speed} (gust: ${weatherData.wind.gust})`;
     visibility.innerText = `Visibility: ${weatherData.visibility / 1000}km`;
